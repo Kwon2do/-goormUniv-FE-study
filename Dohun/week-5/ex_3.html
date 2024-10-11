@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 예제3(calc함수 사용)</title>
+    <style>
+        .message{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            /*부모 요소 폰트크기 현재 16px => pdding:8px*/
+            padding: 0.5em;
+            border: 1px solid black;
+            font-size: 1.5em;
+        }
+        .messageInput{
+            /*전송버튼을 뺀 나머지를 모두 차지하도록 하기 위해서*/
+            width: calc(100% - 100px);
+            height: 80%;
+            border: none;
+            resize: none;
+        }:focus{outline: none;}
+        .btn{
+            width: 100px;
+            height: 100%;
+            border-radius: 8px;
+            background-color: #ff8f45;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <textarea class="messageInput"></textarea>
+        <button class="btn">전송</button>
+    </div>
+</body>
+</html>

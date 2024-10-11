@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 예제2(가변 레이아웃)</title>
+    <style>
+        /*패딩이 늘어나도 박스 크기가 늘어나지 않도록 설정*/
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .header{
+            width: 100%;
+            height: 100px;
+            background-color: tomato;
+        }
+        .main{
+            /*container가 차지한 공간의 67%*/
+            width: 67%;
+            height: 300px;
+            background-color: orange;
+        }
+        .aside{
+            width: 33%;
+            height: 300px;
+            background-color: purple;
+        }
+        .footer{
+            width: 100%;
+            height: 100px;
+            background-color: violet;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="main">MAIN</div>
+        <div class="aside">ASIDE</div>
+        <div class="footer">FOOTER</div>
+    </div>
+</body>
+</html>
