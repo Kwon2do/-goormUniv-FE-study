@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc 함수</title>
+    <style>
+        .message{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            padding: 0.5em;
+            border: 1px solid #000;
+            font-size: 1.5em;
+        }
+
+        .message__text{
+            width: calc(100% - 100px);
+            height: 100%;
+            border: none;
+            resize: none;            
+        }
+
+        .message__text:focus{outline: none;}
+
+        .message__send{
+            width: 100px;
+            height: 100%;
+            border-radius: 8px;
+            background-color: #93c4cf;      
+        }
+
+    </style>
+</head>
+<body>
+    <div class="message">
+        <textarea class="message__text"></textarea>
+        <button class="message__send">전송</button>
+    </div>
+</body>
+</html>
